@@ -3,6 +3,8 @@
 #include <string>
 #include <ctime>
 #include <iostream>
+#include <vector>
+#include <algorithm>
 using namespace std;
 class Ingredient{
     private:
@@ -14,6 +16,7 @@ class Ingredient{
         Ingredient(string name, int quantity, time_t expiration_date);
         int get_quantity();
         void set_quantity(int quantity);
+        string get_name();
         string* get_potential_dishes();
 };
 

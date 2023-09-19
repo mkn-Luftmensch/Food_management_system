@@ -18,4 +18,6 @@ void Ingredient::set_quantity(int quantity){
     cout << "Success";
 }
 
+string Ingredient::get_name() {return name;}
+
 string* Ingredient::get_potential_dishes(){return nullptr;}
