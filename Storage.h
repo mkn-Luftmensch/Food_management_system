@@ -8,8 +8,12 @@ class Storage : public List {
     Ingredient* available_ingredients;
     public:
     Storage();
-    void add_ingredient(Ingredient* new_ingredient);
+    Storage(int size);
+    void add_ingredient(Ingredient new_ingredient);
+    void remove_ingredient(Ingredient current_ingredient);
+    ~Storage();
 };
 
 
 #endif
+
