@@ -13,15 +13,6 @@ Storage::Storage() {
 }
 
 void Storage::add_ingredient(Ingredient new_ingredient) {
-    bool found = false;
-    for (int i = 0; i < current_size; i++) {
-            if (new_ingredient.get_name() == available_ingredients[i].get_name()) {
-                available_ingredients[i].set_quantity(available_ingredients[i].get_quantity() + new_ingredient.get_quantity());
-                break;
-                found = true;
-        }
-    }
-    if (found == false) {
     if (current_size < size) {
         available_ingredients[current_size] = new_ingredient; 
         current_size++;
@@ -29,7 +20,6 @@ void Storage::add_ingredient(Ingredient new_ingredient) {
     }
     else {
         std::cout << "The list is full" << std::endl;
-    }
     }
 }
 
