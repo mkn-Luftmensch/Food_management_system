@@ -1,9 +1,9 @@
 #include "Recipe.h"
 
 Recipe::Recipe() {
-    this->name="";
-    this->intruction="";
-    this->ingredients = {};
+    name="";
+    intruction="";
+    ingredients = new vector<Ingredient>;
 }
 
 Recipe::Recipe(string name, vector<Ingredient>* ingredients, string instruction){
@@ -20,6 +20,7 @@ void Recipe::add_ingredient(Ingredient new_ingredient) {
     ingredients->push_back(new_ingredient);
 }
 
+string Recipe::get_name() {return name;}
 
 void Recipe::remove_ingredient(string ingredient_name) {
     auto it = ingredients->begin();
