@@ -22,13 +22,13 @@ void ShoppingList::add_ingredient(Ingredient new_ingredient) {
     // operate this by creating a sub dynamic array to store the existing ingredients
     // create new dynamic array to copy the existing and store new ingredients
     else {
-        Ingredient* copy_ingredients = new Ingredient[size];
+        Ingredient* copy_ingredients = new Ingredient[current_size];
         for (int i = 0; i < size; i++) {
             copy_ingredients[i] = unavailable_ingredients[i];
         }
         delete[] unavailable_ingredients;
         size++;
-        Ingredient* unavailable_ingredients = new Ingredient[size];
+        unavailable_ingredients = new Ingredient[size];
         for (int i = 0; i < size - 1; i++) {
             unavailable_ingredients[i] = copy_ingredients[i];
         }

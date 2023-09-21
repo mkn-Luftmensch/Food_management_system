@@ -31,7 +31,7 @@ void OnlineShopping::add_ingredient(Ingredient new_ingredient) {
         }
         delete[] online_purchase_ingredients;
         size++;
-        Ingredient* online_purchase_ingredients = new Ingredient[size];
+        online_purchase_ingredients = new Ingredient[size];
         for (int i = 0; i < size - 1; i++) {
             online_purchase_ingredients[i] = copy_ingredients[i];
         }

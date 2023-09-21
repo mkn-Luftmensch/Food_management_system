@@ -29,7 +29,7 @@ void Storage::add_ingredient(Ingredient new_ingredient) {
         }
         delete[] available_ingredients;
         size++;
-        Ingredient* available_ingredients = new Ingredient[size];
+        available_ingredients = new Ingredient[size];
         for (int i = 0; i < size - 1; i++) {
             available_ingredients[i] = copy_ingredients[i];
         }
