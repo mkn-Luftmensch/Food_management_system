@@ -20,7 +20,7 @@ void ShoppingList::add_ingredient(Ingredient new_ingredient) {
     }
     // increase the sizer of the array if the limit is reached
     // operate this by creating a sub dynamic array to store the existing ingredients
-    // create new dynamic array to store the existing and new ingredients
+    // create new dynamic array to copy the existing and store new ingredients
     else {
         Ingredient* copy_ingredients = new Ingredient[size];
         for (int i = 0; i < size; i++) {
