@@ -55,9 +55,8 @@ void OnlineShopping::remove_ingredient(Ingredient current_ingredient) {
 
 void OnlineShopping::print_ingredients() {
      for (int i = 0; i < current_size; i++) {
-        std::cout << i << ". ";
-        std::cout << online_purchase_ingredients[i].get_name();
-        std::cout << online_purchase_ingredients[i].get_quantity();
+        std::cout << online_purchase_ingredients[i].get_name() << std::endl;
+        std::cout << online_purchase_ingredients[i].get_quantity() << std::endl;
      }
 }
 
