@@ -13,6 +13,8 @@ class Recipe{
         string get_name();
         void add_ingredient(Ingredient new_ingredient);
         void remove_ingredient(string ingredient_name);
+        void print_all_ingredients();
+        // ~Recipe();
         
 };
 

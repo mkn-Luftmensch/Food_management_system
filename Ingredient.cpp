@@ -1,12 +1,15 @@
 #include "Ingredient.h"
 
-Ingredient::Ingredient() : name(""), quantity(0), information("") {}
+Ingredient::Ingredient() : name(""), quantity(0) {
+    information = "";
+    expiration_date = 0;
+}
 
-Ingredient::Ingredient(string name, int quantity, string information){
+Ingredient::Ingredient(string name, int quantity, time_t expiration_date){
     this->name = name;
     this->quantity = quantity;
-    this->information = information;
-    // this->expiration_date = expiration_date;
+    // this->information = information;
+    this->expiration_date = expiration_date;
 }
 
 int Ingredient::get_quantity(){return quantity;}
@@ -17,7 +20,7 @@ void Ingredient::set_quantity(int quantity){
 
 string Ingredient::get_name() {return name;}
 
-string* Ingredient::get_potential_dishes(){return nullptr;}
+// string* Ingredient::get_potential_dishes(){return nullptr;}
 
 bool Ingredient::is_expired() {return false;}
 

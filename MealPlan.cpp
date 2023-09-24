@@ -33,3 +33,7 @@ string MealPlan::get_title() {
 void MealPlan::set_title(string new_title) {
     title = new_title;
 }
+
+// MealPlan::~MealPlan() {
+//     delete recipes;
+// }

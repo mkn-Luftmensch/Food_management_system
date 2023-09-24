@@ -29,3 +29,14 @@ void Recipe::remove_ingredient(string ingredient_name) {
         else ++it;
     }
 }
+
+void Recipe::print_all_ingredients(){
+    for (Ingredient ingredient : *ingredients) {
+        cout << ingredient.get_name() << " "; 
+    }
+    cout << endl;
+}
+
+// Recipe::~Recipe(){
+//     delete ingredients;
+// }

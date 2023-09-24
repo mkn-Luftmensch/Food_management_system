@@ -52,9 +52,10 @@ void ShoppingList::remove_ingredient(Ingredient current_ingredient) {
 
 void ShoppingList::print_ingredients() {
      for (int i = 0; i < current_size; i++) {
-        std::cout << unavailable_ingredients[i].get_name() << std::endl;
-        std::cout << unavailable_ingredients[i].get_quantity() <<std::endl;
+        std::cout << unavailable_ingredients[i].get_name() << ":";
+        std::cout << unavailable_ingredients[i].get_quantity() << " ";
      }
+     cout << endl;
 }
 
 void ShoppingList::buy_ingredients() {

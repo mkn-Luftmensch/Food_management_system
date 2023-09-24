@@ -14,6 +14,7 @@ class MealPlan {
         void remove_recipe(string recipe_name);
         string get_title();
         void set_title(string new_title);
+        // ~MealPlan();
 
 
 };

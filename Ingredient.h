@@ -14,13 +14,13 @@ class Ingredient{
         string information;
     public:
         Ingredient();
-        Ingredient(string name, int quantity, string information);
+        Ingredient(string name, int quantity, time_t expiration_date);
 
         int get_quantity();
         void set_quantity(int quantity);
         
         string get_name();
-        string* get_potential_dishes();
+        // string* get_potential_dishes();
         
         bool is_expired();
 
